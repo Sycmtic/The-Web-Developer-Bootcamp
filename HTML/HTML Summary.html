@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title is used for keyword search -->
+	<title>HTML Summary</title>
+</head>
+<body>
+<!-- The HTML <h1>–<h6> elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest. -->
+	<h1>This is h1</h1>
+	<h2>This is h2</h2>
+	<h3>This is h3</h3>
+	<h4>This is h4</h4>
+	<h5>This is h5</h5>
+	<h6>This is h4</h6>
+
+
+	<!-- Order list -->
+	<ol>
+		<li>first item</li>
+		<li>second item</li>
+	</ol>
+
+
+	<!-- Unorder list -->
+	<ul>
+		<li>first item</li>
+		<li>second item
+			<!-- Nesting list -->
+			<ul>
+				<!-- The HTML Strong Importance Element (<strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in BOLD type. -->
+				<li>second item <strong>first</strong> subitem</li>
+				<!-- The HTML <em> element marks text that has stress emphasis. The <em> element can be nested, with each level of nesting indicating a greater degree of emphasis. -->
+				<li>second item <em>second</em> subitem
+					<ul>
+						<li>second item second subitem first sub-subitem</li>
+						<li>second item second subitem second sub-subitem</li>
+					</ul>
+				<!-- closing second sublist -->
+				</li>
+			</ul>
+		<!-- closing first sublist -->
+		</li>
+		<li>third item</li>
+	</ul>
+
+
+	<!-- The HTML <p> element represents a paragraph of text. Paragraphs are block-level elements(A block-level element occupies the entire space of its parent element (container)). -->
+	<p>
+		<!-- <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline element. It can be used to group elements for styling purposes (using the class or id attributes) -->
+		This is the <span class="first paragraph">first paragraph</span> of text.
+		This is the first paragraph of text.
+		This is the first paragraph of text.</p>
+	<p>This is the second paragraph.
+	This is the second paragraph.
+	This is the second paragraph.</p>
+
+
+	<!-- The HTML <img> element embeds an image into the document. -->
+	<img src="http://i.imgur.com/Zl0A6erm.jpg">
+
+
+	<!-- The HTML <a> element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL. -->
+	<a href="https://instagram.com/dogsofinstagram/?hl=en">This is the link to Instagram</a>
+
+
+	<!-- HTML Table -->
+	<table border="1">
+		<!-- The HTML <thead> element defines a set of rows defining the head of the columns of the table. -->
+		<thead>
+			<!-- The HTML <tr> element defines a row of cells in a table. Those can be a mix of <td> and <th> elements. -->
+			<tr>
+				<!-- The HTML <th> element defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes. -->
+				<th>th1</th>
+				<th>th2</th>
+				<th>th3</th>
+			</tr>
+		</thead>
+		<!-- The HTML Table Body element (<tbody>) encapsulates a set of table row (<tr> elements, indicating that they comprise the body of the table (<table>). -->
+		<tbody>
+			<tr>
+				<td>row1col1</td>
+				<td>row1col2</td>
+				<td>row1col3</td>
+			</tr>
+			<tr>
+				<td>row2col1</td>
+				<td>row2col2</td>
+				<td>row2col3</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- The HTML <form> element represents a document section that contains interactive controls to submit information to a web server. line 94 to line 158 -->
+	<form>
+		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
+		<!-- use for to match the id -->
+		<label for="name">Name:</label>
+		<!-- placeholder is the background default text -->
+		<input name="name" id="name" type="text" placeholder="John" required>
+
+		<!-- The HTML Content Division element (<div>) is the generic container for flow content. -->
+		<div>
+			<label for="male">Male</label>
+			<!-- radio-type input; "name" is for the name of send message; "value" is for the value of send message; id is used for select or match -->
+			<input name="gender" id="male" type="radio" value="male">
+			<label for="female">Female</label>
+			<input name="gender" id="female" type="radio" value="female">
+		</div>
+
+		<!-- email & password type of input -->
+		<div>
+			<!-- label can also use in this way -->
+			<label>
+				Email:
+				<input name="email" type="email" placeholder="your email" required>
+			</label>
+
+			<label>
+				Password:
+				<!-- pattern is used to validate the input; required title is used to give suggestion to user -->
+				<input name="password" type="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+			</label>
+		</div>
+
+		<!-- drop down bar -->
+		<div>
+			<label>
+				Birthday:
+				<select name="month">
+					<option>Month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+				</select>
+				<select name="day">
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select>
+				<select name="year">
+					<option>Year</option>
+					<option>2017</option>
+					<option>2016</option>
+					<option>2015</option>
+				</select>
+			</label>
+		</div>
+
+		<!-- checkbox type of input -->
+		<label for="agreed">I agree to the terms and conditions:</label>
+		<input id="agreed" name="agreed" type="checkbox">
+		
+		<!-- The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+		<br>
+		<!-- submit type of input -->
+		<input type="submit">
+	</form>
+
+	<!-- see Navbar and botton at gallery.html & index.html -->
+</body>
+</html>
