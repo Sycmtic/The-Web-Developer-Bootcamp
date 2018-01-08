@@ -1,0 +1,40 @@
+body {
+	border: 20px solid #bdc3c7;
+	padding: 20px;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto;
+	font-family: Source Sans Pro;
+}
+
+.quote {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+/*
+ * rem is just like em which are relative to the elements of parent
+ * rem is set by the root element
+ */
+.date {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.post {
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: #2c3e50;
+	font-size: 2.0rem;
+}
+
+/* Gradient transparent - color - transparent */
+/* Google hr style and choose one then copy the css code */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
