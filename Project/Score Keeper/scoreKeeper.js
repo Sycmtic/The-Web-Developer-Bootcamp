@@ -20,8 +20,10 @@ p1Button.addEventListener("click", function() {
 		p1Score++;
 		if (p1Score === winningScore) {
 			gameOver = true;
+			// use class in CSS to make change easier
 			p1Display.classList.add("winner");
 		}
+		// textContent() method to change the text
 		p1Display.textContent = p1Score;
 	}	
 })
@@ -31,7 +33,6 @@ p2Button.addEventListener("click", function() {
 		p2Score++;
 		if (p2Score === winningScore) {
 			gameOver = true;
-			// use CSS to make change easier
 			p2Display.classList.add("winner");
 		}
 		p2Display.textContent = p2Score;
