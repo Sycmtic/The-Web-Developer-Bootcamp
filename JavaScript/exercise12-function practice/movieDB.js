@@ -1,3 +1,4 @@
+// store objects in an array
 var movieDB = [
 {watch: true, name: "In Bruges", rate: 5}, 
 {watch: false, name: "Frozen", rate: 4.5}, 
@@ -15,6 +16,7 @@ function printMovie(movie) {
 	return result;
 }
 
+// using forEach to get through all elements in movieDB array
 movieDB.forEach(function(movie) {
 	console.log(printMovie(movie));
 });
