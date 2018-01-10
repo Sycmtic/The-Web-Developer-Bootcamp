@@ -1,0 +1,24 @@
+1. ls (file path)
+to see all the elements in current(given) file
+
+2. cd folderName/(folder path)
+to get into the given folder
+
+3. cd .. 
+go back to last level
+
+4. touch fileName
+create a new file
+
+5. mkdir directoryName
+create a new directory
+
+6. rm fileName
+delete the file
+
+7. rm -rf directoryName
+delete the directory
+
+8. node (fileName.js)
+to get into the JS mode which can code JS (use control + c to quit)
+if you add file name after the node operator command line can execute this js file
