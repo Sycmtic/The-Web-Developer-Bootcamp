@@ -22,3 +22,6 @@ delete the directory
 8. node (fileName.js)
 to get into the JS mode which can code JS (use control + c to quit)
 if you add file name after the node operator command line can execute this js file
+
+9. npm install packageName
+install npm package
