@@ -36,6 +36,9 @@ install framework express
 12. npm install ejs (--save)
 install ejs
 
+13. npm install body-parser (--save)
+install body parser use to deal with post request
+
 13. c9 fileName
 open file in cloud 9
 
