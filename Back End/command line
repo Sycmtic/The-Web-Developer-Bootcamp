@@ -24,17 +24,20 @@ to get into the JS mode which can code JS (use control + c to quit)
 if you add file name after the node operator command line can execute this js file
 
 9. npm install packageName
-install npm package
+install npm package like faker and cat-me
 
-10. npm install express (--save)
+10. npm init
+create a new package.json in current folder
+
+11. npm install express (--save)
 install framework express
 ( save the package to dependency section in package.json file )
 
-11. npm init
-create a new package.json in current folder
+12. npm install ejs (--save)
+install ejs
 
-12. c9 fileName
+13. c9 fileName
 open file in cloud 9
 
-13. clear
+14. clear
 clear the terminal
