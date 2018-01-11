@@ -33,5 +33,8 @@ install framework express
 11. npm init
 create a new package.json in current folder
 
-12. clear
+12. c9 fileName
+open file in cloud 9
+
+13. clear
 clear the terminal
