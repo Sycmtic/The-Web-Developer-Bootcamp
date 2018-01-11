@@ -5,7 +5,9 @@
     <li><%= friend %></li>
 <% }); %>
 
+<!-- method means this is a post request and give to the url "/addfriend" -->
 <form action="/addfriend" method=POST>
+    <!-- give input value a name, it's more like var newfriend = inputValue -->
     <input type="text" name="newfriend" placeholder="name">
     <button>I made a new friend!</button>
 </form>
