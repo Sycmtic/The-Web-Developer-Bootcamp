@@ -1,4 +1,4 @@
-// import express framework
+// import express framework(which different from library such as jQuery is that system automatically do something for you)
 var express = require("express");
 var app = express();
 
