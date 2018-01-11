@@ -26,8 +26,12 @@ if you add file name after the node operator command line can execute this js fi
 9. npm install packageName
 install npm package
 
-10.npm install express
+10. npm install express (--save)
 install framework express
+( save the package to dependency section in package.json file )
 
-11. clear
+11. npm init
+create a new package.json in current folder
+
+12. clear
 clear the terminal
