@@ -30,6 +30,8 @@ app.get("/speak/:animal", function(req, res) {
    res.send("The " + animal + " says '" + word + "'"); 
 });
 
+// req includes all the input messages, we can use .params to access the input words
+// if input is a number, remember it's a 'string number', use Number() to change it back
 app.get("/repeat/:words/:times", function(req, res) {
    var words = req.params.words;
    var times = Number(req.params.times);
