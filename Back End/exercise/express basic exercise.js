@@ -46,7 +46,7 @@ app.get("/repeat/:words/:times", function(req, res) {
 //   }
 });
 
-// "*" means the all situations when request message send
+// "*" means the all situations of get request message
 app.get("*", function(req, res) {
    res.send("Sorry, page not found...What are you doing with your life"); 
 });
