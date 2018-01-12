@@ -1,3 +1,4 @@
+// json is the language that focus on data, which is also the type that web server responds back
 {
   "name": "postrequestdemo",
   "version": "1.0.0",
