@@ -39,8 +39,11 @@ install ejs
 13. npm install body-parser (--save)
 install body parser to deal with post request
 
-14. c9 fileName
+14. npm install request
+install request package to make request in JS file
+
+15. c9 fileName
 open file in cloud 9
 
-15. clear
+16. clear
 clear the terminal
