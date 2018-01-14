@@ -8,10 +8,11 @@ app.get("/", function(req, res) {
     res.render("search");
 });
 
+// get the request
 app.get("/results", function(req, res) {
     var query = req.query.search;
     var url = "http://www.omdbapi.com/?s=" + query + "&apikey=thewdb";
-    // make a resquest to this url
+    // send a resquest to this url
     request(url, function(error, response, body) {
         // statusCode is the status that webpage responses, 200 means ok
        if (!error && response.statusCode == 200) {
