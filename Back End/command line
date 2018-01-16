@@ -42,8 +42,11 @@ install body parser to deal with post request
 14. npm install request
 install request package to make request in JS file
 
-15. c9 fileName
+15. npm install mongoose
+install mongoose package to write mongoDB in JS
+
+16. c9 fileName
 open file in cloud 9
 
-16. clear
+17. clear
 clear the terminal
