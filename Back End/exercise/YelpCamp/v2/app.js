@@ -5,7 +5,7 @@ var express     = require("express"),
     // mongoose allow you write mongoDB in JS
     mongoose    = require("mongoose");
 
-// connect database
+// set up default mongoose connection to a certain mongodb database
 mongoose.connect("mongodb://localhost/yelp_camp", {useMongoClient: true});
 // set the default file type as ejs
 app.set("view engine", "ejs");
@@ -24,6 +24,7 @@ var campgroundSchema = new mongoose.Schema({
 });
 
 // tell the mongoose Campground database to use this schema
+// The first argument is the singular name of the collection that will be created for your mode
 var Campground = mongoose.model("Campground", campgroundSchema);
 
 // if you use array to store, when restart, the storage message gone
