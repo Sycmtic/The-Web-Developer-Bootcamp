@@ -1,0 +1,11 @@
+1. use DATABASE_NAME
+use this database, if not exist create it
+
+2. db
+check your currently selected database
+
+3. show dbs
+check your database list
+
+4. db.collection.drop()
+is used to drop a collection from the database
