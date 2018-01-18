@@ -1,6 +1,6 @@
 var express     = require("express"),
     app         = express(),
-    // body-parser took the form request body and parsed it to JS object
+    // body-parser is used to get the data out of form: the form send data to request body body-parser parsed it to JS object
     bodyParser  = require('body-parser'),
     // mongoose allow you write mongoDB in JS
     mongoose    = require("mongoose");
