@@ -1,6 +1,6 @@
 var express     = require("express"),
     app         = express(),
-    // body-parser took the request body and parsed it to JS object
+    // body-parser took the form request body and parsed it to JS object
     bodyParser  = require('body-parser'),
     // mongoose allow you write mongoDB in JS
     mongoose    = require("mongoose");
