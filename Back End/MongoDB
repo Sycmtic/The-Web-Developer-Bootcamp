@@ -1,11 +1,36 @@
-1. use DATABASE_NAME
-use this database, if not exist create it
+Install MongoDB
+first need to run "sudo apt-get install -y mongodb-org" from your terminal in c9.
+then:
+$ mkdir data
+$ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+$ chmod a+x mongod
 
-2. db
-check your currently selected database
+1. ~ $ ./mongod
+run mongoDB in the background
+
+2. $ mongo
+open up the mongo shell
 
 3. show dbs
-check your database list
+show all database names
 
-4. db.collection.drop()
-is used to drop a collection from the database
+4. use DATABASE_NAME
+use this database, if not exist create it
+
+5. db.COLLECTION_NAME.insert(object)
+* db refers to the database we are on
+insert a new data into the collection in db
+
+6. show collecitons
+show all collections in current db
+
+7. db.COLLECTION_NAME.find(specificObject)
+* if we input no argument, we will get all elements in current collection
+get specific elements in current collection
+
+8. db.COLLECTION_NAME.update(object1, {$set: object2}) 
+set object 1 to be object 2
+if we don't use {$set: }, we can simply replace object 1 with object2
+
+9. db.COLLECTION_NAME.remove(specificObject)
+remove specific object in collection
