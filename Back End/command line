@@ -49,7 +49,7 @@ install mongoose package to write mongoDB in JS
 install method-override package to override the method to be put or delete
 
 17. npm install express-sanitizer (--save)
-install sanitizer package
+install sanitizer package to get rid of some bad things in body like alert()
 
 18. c9 fileName
 open file in cloud 9
