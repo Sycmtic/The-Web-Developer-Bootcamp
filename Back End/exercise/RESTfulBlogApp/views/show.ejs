@@ -1,0 +1,28 @@
+<% include ./particals/header %>
+
+<!-- segment give a margin around -->
+<div class="ui main text container segment">
+    <div class="ui huge header"><%= blog.title %></div>
+    <div class="ui top attached">
+        <div class="item">
+            <!-- use class in semantic ui to edit image -->
+            <img class="ui centered rounded image" src="<%= blog.image %>">
+            <div class="content">
+                <!-- to transform date type to more readable format -->
+                <span><%= blog.created.toDateString() %></span>
+            </div>
+            <div class="description">
+                <!-- use "-" instead of "=" to render code as HTML or JS -->
+                <p><%- blog.body %></p>
+            </div>
+            <!-- click button to go to edit page -->
+            <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+            <!-- use method override to send delete request when click button -->
+            <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include ./particals/footer %>
