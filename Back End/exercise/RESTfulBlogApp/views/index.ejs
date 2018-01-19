@@ -1,0 +1,38 @@
+<% include ./particals/header %>
+
+<div class="ui main test container">
+    <div class="ui huge header">RESTful Blog App</div>
+    <div class="ui top attached segment">
+        <div class="ui divided items">
+            <!-- loop through all blogs -->
+            <% blogs.forEach(function(blog) { %>
+                <div class="item">
+                    <div class="image">
+                        <img src="<%= blog.image %>">
+                    </div>
+                    <div class="content">
+                        <!-- click title to go to show page -->
+                        <a class="header" href="/blogs/<%= blog._id %>"><%= blog.title %></a>
+                        <div class="meta">
+                            <!-- to transform date type to more readable format -->
+                            <span><%= blog.created.toDateString() %></span>
+                        </div>
+                        <div class="description">
+                            <!-- use substring method to show a few content -->
+                            <p><%- blog.body.substring(0, 100) %>...</p>
+                        </div>
+                        <div class="extra">
+                            <!-- click button to go to show page -->
+                            <a class="ui floated basic violet button" href="/blogs/<%= blog._id %>">
+                                Read More
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+<% include ./particals/footer %>
