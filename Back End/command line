@@ -45,6 +45,9 @@ install request package to make request in JS file
 15. npm install mongoose
 install mongoose package to write mongoDB in JS
 
+16. npm install method-override (--save)
+install method-override package to override the method to be put or delete
+
 16. c9 fileName
 open file in cloud 9
 
