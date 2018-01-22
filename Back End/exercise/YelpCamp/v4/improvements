@@ -1,0 +1,2 @@
+1. separate campground and comments collection(object) by making their own directory
+2. add comment to show page
