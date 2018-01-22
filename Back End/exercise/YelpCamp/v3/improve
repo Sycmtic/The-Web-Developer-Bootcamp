@@ -1,0 +1,2 @@
+1. add association(embedded data/ object reference) between object and separate schema into models folder
+2. add seeds.js file to initialize the database in order to do the test
