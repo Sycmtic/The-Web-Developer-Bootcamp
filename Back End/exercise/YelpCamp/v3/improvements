@@ -1,2 +1,3 @@
-1. add association(embedded data/ object reference) between object and separate schema into models folder
-2. add seeds.js file to initialize the database in order to do the test
+1. add a new object comment and association(embedded data/ object reference) between comment and campground
+2. separate schema into models folder
+3. add seeds.js file to initialize the database in order to do the test
