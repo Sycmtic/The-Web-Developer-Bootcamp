@@ -55,7 +55,7 @@ install sanitizer package to get rid of some bad things in body like alert()
 
 19. npm install passport-local-mongoose (--save)
 
-20. npm install body-parser express-session (--save)
+20. npm install express-session (--save)
 
 21. c9 fileName
 open file in cloud 9
