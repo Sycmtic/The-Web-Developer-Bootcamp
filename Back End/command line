@@ -51,8 +51,14 @@ install method-override package to override the method to be put or delete
 17. npm install express-sanitizer (--save)
 install sanitizer package to get rid of some bad things in body like alert()
 
-18. c9 fileName
+18. npm install passport passport-local (--save)
+
+19. npm install passport-local-mongoose (--save)
+
+20. npm install body-parser express-session (--save)
+
+21. c9 fileName
 open file in cloud 9
 
-19. clear
+22. clear
 clear the terminal
