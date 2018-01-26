@@ -5,6 +5,15 @@ $ mkdir data
 $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
 $ chmod a+x mongod
 
+
+If you leave it running then Cloud 9 could timeout and cause mongo to crash. 
+If this happens, try the following steps to repair it. 
+
+From the command line, run:
+cd ~
+./mongod --repair
+
+
 1. ~ $ ./mongod
 run mongoDB in the background
 
