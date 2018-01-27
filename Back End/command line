@@ -56,9 +56,12 @@ install sanitizer package to get rid of some bad things in body like alert()
 19. npm install passport-local-mongoose (--save)
 
 20. npm install express-session (--save)
+all three above is used for authenticate
 
-21. c9 fileName
+21. npm install connect-flash (--save)
+
+22. c9 fileName
 open file in cloud 9
 
-22. clear
+23. clear
 clear the terminal
