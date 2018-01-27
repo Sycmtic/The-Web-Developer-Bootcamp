@@ -64,8 +64,8 @@ connect-flash is used to send feedback message to user
 22. npm install -g nodemon
 install nodemon to automatically restart the server for you if files have changed
 
-22. c9 fileName
+23. c9 fileName
 open file in cloud 9
 
-23. clear
+24. clear
 clear the terminal
