@@ -59,6 +59,7 @@ install sanitizer package to get rid of some bad things in body like alert()
 all three above are used for authenticate
 
 21. npm install connect-flash (--save)
+connect-flash is used to send feedback message to user
 
 22. c9 fileName
 open file in cloud 9
