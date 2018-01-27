@@ -61,6 +61,9 @@ all three above are used for authenticate
 21. npm install connect-flash (--save)
 connect-flash is used to send feedback message to user
 
+22. npm install -g nodemon
+install nodemon to automatically restart the server for you if files have changed
+
 22. c9 fileName
 open file in cloud 9
 
