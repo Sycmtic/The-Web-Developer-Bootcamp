@@ -18,3 +18,9 @@ set HEAD to point back to the previous commit node
 
 7. git revert --no-commit commit_id..HEAD
 go back to the commit status where HEAD points
+
+8. git push heroku master
+after add and commit all files into git repository, push the master to heroku
+
+9. heroku logs
+check the error message sent back
