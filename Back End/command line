@@ -65,10 +65,13 @@ connect-flash is used to send feedback message to user
 install nodemon to automatically restart the server for you if files have changed
 
 23. export DATABASEURL=mongodb://localhost/yelp_camp_v12
-create a environment variable in order to change the database automatically
+create a environment variable in local in order to change the database automatically
 
-24. c9 fileName
+24. heroku config:set KEY=VALUE
+create a environment variable in heroku in order to change the database automatically
+
+25. c9 fileName
 open file in cloud 9
 
-25. clear
+26. clear
 clear the terminal
