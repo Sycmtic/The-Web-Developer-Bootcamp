@@ -4,8 +4,8 @@ initialize git, it creates a hidden lib ./git
 2. git status
 show git status
 
-3. git add
+3. git add fileName/.(add all untrack files)
 tell the git to track the file
 
-4. git commit -m "(the message you put)"
+4. git commit -m "(the changes you made)"
 commit the tracked file
