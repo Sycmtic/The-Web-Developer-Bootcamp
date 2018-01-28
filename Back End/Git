@@ -1,0 +1,11 @@
+1. git init
+initialize git, creates a hidden lib 
+
+2. git status
+show git status
+
+3. git add
+tell the git to track the file
+
+4. git commit -m "(the message you put)"
+commit the tracked file
