@@ -9,3 +9,9 @@ tell the git to track the file
 
 4. git commit -m "(the changes you made)"
 commit the tracked file
+
+5. git log
+show all previous commit history
+
+6. git checkout
+use HEAD to point back to the previous commit change
