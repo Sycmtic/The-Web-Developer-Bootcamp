@@ -1,5 +1,5 @@
 1. git init
-initialize git, creates a hidden lib 
+initialize git, it creates a hidden lib ./git
 
 2. git status
 show git status
