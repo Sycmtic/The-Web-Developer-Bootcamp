@@ -1,8 +1,8 @@
 1. git init
-initialize git, it creates a hidden lib ./git
+initialize git, it creates a hidden lib ./git and the repository for project
 
 2. git status
-show git status
+ask for git status
 
 3. git add fileName/.(add all untrack files)
 tell the git to track the file
