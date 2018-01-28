@@ -64,8 +64,11 @@ connect-flash is used to send feedback message to user
 22. npm install -g nodemon
 install nodemon to automatically restart the server for you if files have changed
 
-23. c9 fileName
+23. export DATABASEURL=mongodb://localhost/yelp_camp_v12
+create a environment variable in order to change the database automatically
+
+24. c9 fileName
 open file in cloud 9
 
-24. clear
+25. clear
 clear the terminal
