@@ -24,3 +24,6 @@ after add and commit all files into git repository, push the master to heroku
 
 9. heroku logs
 check the error message sent back
+
+10. heroku run _command
+connect to heroku server and run the command in heroku command line
