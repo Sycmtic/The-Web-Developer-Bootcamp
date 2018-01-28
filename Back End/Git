@@ -13,5 +13,8 @@ commit the tracked file
 5. git log
 show all previous commit history
 
-6. git checkout
-use HEAD to point back to the previous commit change
+6. git checkout commit_id
+set HEAD to point back to the previous commit node
+
+7. git revert --no-commit commit_id..HEAD
+go back to the commit status where HEAD points
