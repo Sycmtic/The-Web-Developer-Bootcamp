@@ -70,8 +70,11 @@ create a environment variable in local in order to change the database automatic
 24. heroku config:set KEY=VALUE
 create a environment variable in heroku in order to change the database automatically
 
-25. c9 fileName
+25. npm i -S geocoder
+install geocoder to your project via the terminal in order to use google map api
+
+26. c9 fileName
 open file in cloud 9
 
-26. clear
+27. clear
 clear the terminal
