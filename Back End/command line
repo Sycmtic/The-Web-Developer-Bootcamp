@@ -73,8 +73,11 @@ create a environment variable in heroku in order to change the database automati
 25. npm i -S geocoder
 install geocoder to your project via the terminal in order to use google map api
 
-26. c9 fileName
+26. npm i -S moment (shorthand for npm install --save moment)
+use Moment JS to add time passed since date created
+
+27. c9 fileName
 open file in cloud 9
 
-27. clear
+28. clear
 clear the terminal
