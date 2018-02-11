@@ -91,6 +91,8 @@
 	</table>
 
 	<!-- The HTML <form> element represents a document section that contains interactive controls to submit information to a web server. line 94 to line 158 -->
+	<!-- action: The URI of a program that processes the form information -->
+	<!-- method: type of this action -->
 	<form>
 		<!-- The HTML <label> element represents a caption for an item in a user interface. -->
 		<!-- use for to match the id -->
@@ -101,7 +103,7 @@
 		<!-- The HTML Content Division element (<div>) is the generic container for flow content. -->
 		<div>
 			<label for="male">Male</label>
-			<!-- radio-type input; "name" is for the name of send message(post request); "value" is for the value of send message(post request); id is used for select or match -->
+			<!-- radio-type input; "name" is for the name of send message; "value" is for the value of send message; id is used for select or match -->
 			<input name="gender" id="male" type="radio" value="male">
 			<label for="female">Female</label>
 			<input name="gender" id="female" type="radio" value="female">
@@ -155,8 +157,8 @@
 		<br>
 		<!-- a horizontal rule -->
 		<hr>
-		<!-- submit type of input -->
-		<input type="submit">
+		<!-- same as the button tag -->
+		<input type="submit" value="Complete">
 	</form>
 
 	<!-- see Navbar and botton at gallery.html & index.html -->
