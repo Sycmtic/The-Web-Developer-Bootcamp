@@ -1,0 +1,107 @@
+/* select tag */
+h1 {
+  /* colors in css */
+  color: red
+  /* each 2 hex represent red, green and blue */
+  color: #4B0082;
+  /* RGB based decimal */
+  color: rgb(0, 255, 88);
+  /* RGBA is rgb with an alpha(transparency) channel, range from 0.0 - 1.0 */
+  color: rgba(0, 255, 0.5);
+}
+
+/* select id */
+#name {
+	/* set background color */
+  background: rgba(0, 0, 0, 0.5);
+  /* use image as background */
+  background: url(http://123hdwallpaperpic.com/download/20150725/elephants-african-nature-grass-savannah-overcast-wildlife-photography-animals-1920x1080.jpg);
+  /* do not auto fill the background with images */
+  background-repeat: no-repeat;
+  /* image cover all background */
+  background-size: cover;
+}
+
+/* select class */
+.class {
+	/* all three below are required to display a border */
+	border-width: 5px;
+	border-style: solid;
+	border-color: purple;
+	/* short cut syntax */
+	border: 5px solid purple;
+
+	/* set the max width */
+	max-width: 700px
+	/* Content: width take 100% of parent element */
+	width: 100%;
+	/* padding is the space between content and border */
+	padding: 40px;
+	/* margin is the space outside the border: */
+	/* shortcut syntax: top-bottom left-right */
+	margin: 20px, auto;
+
+	/* specifies that an element should be placed along the left or right side of its container */
+	float:left;
+}
+
+/* select every single element */
+* {
+	/* add decoration to text */
+	text-decoration: line-through;
+
+	/* change the space between lines, 2 means two times than default */
+	line-height: 2;
+	/* change the space between words */
+	/* rem is set referring to root element on the page, while em is relatively set by parent element */
+	letter-spacing: 0.2rem;
+
+	/* change the position of text */
+	text-align: center;
+
+	/* 
+	 * give context a shadow using text-shadow:
+	 * offset-x | offset-y | blur-radius | color
+	 */
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	             0px 8px 13px rgba(0,0,0,0.1),
+	             0px 8px 23px rgba(0,0,0,0.1);
+}
+
+/* descendant selector: select nested inside */
+li .class {
+	/* font-weight font-size font-family */
+	font: bold 16px courier;
+}
+
+/* adjacent selector: select element after (same level) */
+h4 + ul {
+	/* change the original text */
+	text-transform: uppercase;
+}
+
+/* attribute selector */
+a[href="http://www.google.com"] {
+
+}
+input[type="text"] {
+
+}
+
+/* nth of type: select the element of given number */
+ul:nth-of-type(even) {
+
+}
+
+/* 
+BootStrap - framework for CSS/JS:
+Forms: https://getbootstrap.com/docs/4.0/components/forms/
+.form-group .form-control .help-block .form-inline etc
+
+Components: 
+container
+jumbotron
+nav-bar
+
+Grid System: .row .col-lg-6
+*/
