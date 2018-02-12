@@ -64,7 +64,7 @@ input {
 	width: 100%;
 	/* T/R/B/L */
 	padding: 13px 13px 13px 20px;
-	/**/
+	/* the width and height include content padding border (default is content-box) */
 	box-sizing: border-box;
 	/* get rid of the little gap */
 	border: 3px solid rgba(0, 0, 0, 0);
@@ -73,6 +73,7 @@ input {
 input:focus {
 	background: #fff;
 	border: 3px solid #2980b9;
+	/* similar to border, except outline doesn't take space */
 	outline: none;
 }
 
