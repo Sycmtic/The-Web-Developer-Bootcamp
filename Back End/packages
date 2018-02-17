@@ -1,2 +1,5 @@
 - express 
 the web application framework(light) which can do something automatically for you， also means you have less control.
+
+- ejs
+embedded JavaScript templates which allow us write javascript code in HTML file to make HTML dynamically.
