@@ -19,6 +19,9 @@ delete the file
 7. rm -rf directoryName
 delete the directory
 
+* Node.js allows us to write JavaScript on the server side
+* npm is a package manager which allows you to install third party software(framewords application libraries) by using command line.
+
 8. node (fileName.js)
 to get into the JS mode which can code JS (use control + c to quit)
 if you add file name after the node operator command line can execute this js file
