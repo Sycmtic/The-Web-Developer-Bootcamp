@@ -1,0 +1,5 @@
+note: 
+- use "*" to define every other routes that we did not define, usually used to set error page
+- use ":" to define a pattern
+- req object contains all the information about the incoming request, 
+  ex: "req.params" contains all of route parameters and their corresponding values which can use to get subroute
