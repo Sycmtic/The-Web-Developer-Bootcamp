@@ -29,6 +29,9 @@ if you add file name after the node operator command line can execute this file 
 9. npm install packageName
 install npm package like faker and cat-me
 
+* package.json lists the packages that your project depends on,
+and makes your build reproducible, therefore much easier to share with other developers.
+
 10. npm init
 create a new package.json in current folder
 
