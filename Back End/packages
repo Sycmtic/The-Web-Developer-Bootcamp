@@ -1,5 +1,11 @@
 - express 
 the web application framework(light) which can do something automatically for you， also means you have less control.
+use() method to tell the express serve the content
+set() method to tell the express to set the default file type
+partials to simplify the same pattern html code
 
 - ejs
 embedded JavaScript templates which allow us write javascript code in HTML file to make HTML dynamically.
+<%= %> the return value will render to the page and add directly to html 
+<% %> use when just do the logic 
+{variable_name_inside_the_template: variable_we_define} pass variable into a template file
