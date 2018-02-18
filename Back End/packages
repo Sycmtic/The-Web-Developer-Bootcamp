@@ -17,3 +17,9 @@ body-parser groups all the post request information into a single body object.
 simplified HTTP request client to make http calls in js node.(in order to use other API such as yahoo weather api)
 note: when we get the data back, the return body is actually a JSON string. 
 Therefore before we use it, we need to use JSON.parse(body) to convert it to JS object.
+
+-mongoose
+make it easier to interact with database
+* mongoose.connect("database_path"); to connect a database
+* var nameSchema = mongoose.Schema(object); to define a pattern
+* mongoose.model("name", nameSchema); compile schema to a model
