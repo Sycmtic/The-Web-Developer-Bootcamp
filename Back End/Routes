@@ -9,12 +9,12 @@ note:
       "req.params.id" is used to get the id("/:id" pattern in show route url) of object which makes request
       
 RESTful Routes:
-name      url                    verb     desc.
-===========================================================================
-Index    /campgrounds            GET     Displays a list of all campgrounds
-New      /campgrounds/new        GET     Displays form to make a new campground
-Create   /campgrounds            POST    Add new campground to database
-Show     /campgrounds/:id        GET     Show more info about one campground
-Edit     /campgrounds/:id/edit   GET     Show edit form for one campground
-Update   /campgrounds/:id        PUT     Update a particular campground, then redirect somewhere
-Destory  /camprgounds/:id        DELETE  Delete a particular campground, then redirect somewhere
+name      url                    verb     desc.                                                   Mongoose Method
+===============================================================================================================================
+Index    /campgrounds            GET     Displays a list of all campgrounds                       Campground.find()
+New      /campgrounds/new        GET     Displays form to make a new campground                   N/A
+Create   /campgrounds            POST    Add new campground to database                           Campground.create()
+Show     /campgrounds/:id        GET     Show more info about one campground                      Campground.findById()
+Edit     /campgrounds/:id/edit   GET     Show edit form for one campground                        Campground.findById()
+Update   /campgrounds/:id        PUT     Update a particular campground, then redirect somewhere  Campground.findByIdAndUpdate()
+Destory  /camprgounds/:id        DELETE  Delete a particular campground, then redirect somewhere  Campground.findByIdAndRemove()
