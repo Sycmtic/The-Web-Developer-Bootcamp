@@ -9,9 +9,12 @@ note:
       "req.params.id" is used to get the id("/:id" pattern in show route url) of object which makes request
       
 Restful Routes:
-name     url                verb     desc.
+name      url                    verb     desc.
 ===========================================================================
-INDEX   /campgrounds        GET     Displays a list of all campgrounds
-NEW     /campgrounds/new    GET     Displays form to make a new campground
-CREATE  /campgrounds        POST    Add new campground to database
-SHOW    /campgrounds/:id    GET     Show more info about one campground
+Index    /campgrounds            GET     Displays a list of all campgrounds
+New      /campgrounds/new        GET     Displays form to make a new campground
+Create   /campgrounds            POST    Add new campground to database
+Show     /campgrounds/:id        GET     Show more info about one campground
+Edit     /campgrounds/:id/edit   GET     Show edit form for one campground
+Update   /campgrounds/:id        PUT     Update a particular campground, then redirect somewhere
+Destory  /camprgounds/:id        DELETE  Delete a particular campground, then redirect somewhere
