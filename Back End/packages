@@ -15,3 +15,4 @@ body-parser groups all the post request information into a single body object.
 
 - request
 simplified HTTP request client to make http calls in js node.(in order to use other API such as yahoo weather api)
+the return body is a string, therefore before we use it, we need to JSON.parse(body)
