@@ -19,7 +19,7 @@ simplified HTTP request client to make http calls in js node.(in order to use ot
 note: when we get the data back, the return body is actually a JSON string. 
 Therefore before we use it, we need to use JSON.parse(body) to convert it to JS object.
 
--mongoose
+- mongoose
 make it easier to interact with database
 * mongoose.connect("database_path"); to connect a database
 * var name_Schema = mongoose.Schema(object); to define a pattern
@@ -27,3 +27,8 @@ make it easier to interact with database
 * mongoose.create(object, callback(err, item_created); add and save an new object to database
 * model_name.find({specific}, callback(err, item_found) {}); to find a specific items in database
 * model_name.findById(req.params.id, callback(err, item_found) {}); to find the campground with provided id
+
+- method-override
+HTML form don't support PUT/DELETE request, 
+therefore we use method-override package to make a cheat and
+when it sees ?_method=PUT/DELETE, it will treat the get/post method as put/delete method
