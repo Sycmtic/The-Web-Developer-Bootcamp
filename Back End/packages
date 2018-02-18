@@ -28,6 +28,7 @@ make it easier to interact with database
 * model_name.find({specific}, callback(err, item_found) {}); to find a specific items in database
 * model_name.findById(req.params.id, callback(err, item_found) {}); to find the item with provided id
 * model_name.findByIdAndUpdate(req.params.id, req.params.newContent, callback(err, item_update){} ); to find and update item
+* model_name.findByIdAndRemove(req.params.id, callback(err){} ); to find and delete item in database
 
 - method-override
 HTML form don't support PUT/DELETE request, 
