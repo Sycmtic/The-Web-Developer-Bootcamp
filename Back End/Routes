@@ -8,7 +8,7 @@ note:
       "object._id" is the id that mongoDB automatically create for their item
       "req.params.id" is used to get the id("/:id" pattern in show route url) of object which makes request
       
-Restful Routes:
+RESTful Routes:
 name      url                    verb     desc.
 ===========================================================================
 Index    /campgrounds            GET     Displays a list of all campgrounds
