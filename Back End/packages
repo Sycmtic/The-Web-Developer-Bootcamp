@@ -36,4 +36,5 @@ therefore we use method-override package to make a cheat and
 when it sees "_method", it will treat the get/post method as put/delete method
 
 - express-sanitizer
-used in change items in database(create, update) and middleware, it sanitizes the input object
+used in change items in database(create, update) and middleware, 
+it gets rid of bad thing like alert() in the input object
