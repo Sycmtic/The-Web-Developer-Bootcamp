@@ -14,4 +14,4 @@ embedded JavaScript templates which allow us write javascript code in HTML file 
 body-parser groups all the post request information into a single body object.
 
 - request
-simplified HTTP request client to make http calls in js node.(in order to use other API such as google)
+simplified HTTP request client to make http calls in js node.(in order to use other API such as yahoo weather api)
