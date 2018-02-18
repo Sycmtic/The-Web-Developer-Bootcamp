@@ -25,3 +25,4 @@ make it easier to interact with database
 * mongoose.model("model_name", nameSchema); compile schema to a model
 * mongoose.create(object, callback(err, item_created); add and save an new object to database
 * model_name.find({specific}, callback(err, item_found) {}); to find a specific items in database
+* model_name.findById(req.params.id, callback(err, item_found) {}); to find the campground with provided id
