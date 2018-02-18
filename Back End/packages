@@ -6,8 +6,9 @@ partials to simplify the same pattern html code
 
 - ejs
 embedded JavaScript templates which allow us write javascript code in HTML file to make HTML dynamically.
+<% %> use when just do the logic
 <%= %> the return value will render to the page and add directly to html 
-<% %> use when just do the logic 
+<%- %> run the content in it as a code rather than string
 {variable_name_inside_the_template: variable_we_define} pass variable into a template file
 
 - body-parser
