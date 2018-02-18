@@ -3,3 +3,4 @@ note:
 - use ":" to define a pattern
 - req object contains all the information about the incoming request, 
   ex: "req.params" contains all of route parameters and their corresponding values which can use to get subroute
+      "req.body" contains all the post request information(express do not create it, we should use body-parser)
