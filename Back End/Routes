@@ -7,6 +7,7 @@ note:
       "req.query" contains all the get request information from a form(request api)
       "object._id" is the id that mongoDB automatically create for its object
       "req.params.id" is used to get the id("/:id" pattern in show route url) of object which makes request
+      "req.user" contains the information(username and id) of current login user
 - "./" refers to current level in file, "../" refers to the previous level of file path
 - module.exports allows us break things into files to clean up codes and make things modular.
 - at the input in form, we can use name="comment[author]" name="comment[text]" to group text and author into one comment object
