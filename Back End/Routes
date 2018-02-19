@@ -1,6 +1,6 @@
 note: 
 - use "*" to define every other routes that we did not define, usually used to set error page
-- use ":" to define a pattern
+- use ":" to define a route pattern
 - req object contains all the information about the incoming request, 
   ex: "req.params" contains all of route parameters and their corresponding values which can use to get subroute
       "req.body" contains all the post request information(express do not create it, so we need to use body-parser)
@@ -9,8 +9,9 @@ note:
       "req.params.id" is used to get the id("/:id" pattern in show route url) of object which makes request
       "req.user" contains the information(username and id) of current login user, if not login it will be null
 - "./" refers to current level in file, "../" refers to the previous level of file path
-- module.exports allows us break things into files to clean up codes and make things modular.
 - at the input in form, we can use name="comment[author]" name="comment[text]" to group text and author into one comment object
+- module.exports allows us break things into files to clean up codes and make things modular.
+- express.Router() allows us to group all routes together.
       
 RESTful Routes:
 name      url                    verb     desc.                                                   Mongoose Method
