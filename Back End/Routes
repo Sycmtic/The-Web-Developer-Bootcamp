@@ -35,3 +35,13 @@ middlewareObj.isLoggedIn = function(req, res, next) {
     req.flash("error", "You need to be logged in to do that");
     res.redirect("/login");
 };
+// middleware that runs in every single routes to add the variable
+app.use(function(req, res, next) {
+    // pass user to every single templetes
+    res.locals.currentUser = req.user;
+    // add feedback message to all routes
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
+    // remember to add next() method
+    next();
+});
