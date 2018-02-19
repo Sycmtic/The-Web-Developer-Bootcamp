@@ -46,3 +46,9 @@ when it sees "_method", it will treat the get/post method as put/delete method
 - express-sanitizer
 used in change items in database(create, update) and middleware, 
 it gets rid of bad thing like alert() in the input object
+
+- passport                    the authentication middleware for Node.js (+300 strategy)
+- passport-local              username and password authentication strategy for Passport and Node.js
+- passport-local-mongoose     a mongoose plugin that simplifies building username and password login with Passport
+
+- express-session             a way to provide state when login
