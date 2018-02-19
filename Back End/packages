@@ -57,7 +57,7 @@ Deal with database:
 * model_name.create(object, callback(err, item_created); 
 // to find a specific items in database
 * model_name.find({specific}, callback(err, item_found) {}); 
-// to find the item with provided id
+// to find the item with provided id （coming with "/:id" in the route path when make request, we can call it whatever we want)
 * model_name.findById(req.params.id, callback(err, item_found) {}); 
 // to find and update item
 * model_name.findByIdAndUpdate(req.params.id, req.params.newContent, callback(err, item_update) {}); 
