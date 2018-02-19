@@ -11,7 +11,7 @@ note:
 - "./" refers to current level in file, "../" refers to the previous level of file path
 - at the input in form, we can use name="comment[author]" name="comment[text]" to group text and author into one comment object
 - module.exports allows us break things into files to clean up codes and make things modular.
-- express.Router() allows us to group all routes together.
+- express.Router() allows us to group all routes together. then use module.exports() to return, in app.js require it and use it
       
 RESTful Routes:
 name      url                    verb     desc.                                                   Mongoose Method
