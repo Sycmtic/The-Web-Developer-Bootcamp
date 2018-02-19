@@ -12,6 +12,9 @@ note:
 - at the input in form, we can use name="comment[author]" name="comment[text]" to group text and author into one comment object
 - module.exports allows us break things into files to clean up codes and make things modular.
 - express.Router() allows us to group all routes together. then use module.exports() to return, in app.js require it and use it
+tip: when we use "app.use("/campgrounds/:id/comments", commentRoutes);" to add prefix to the route to clean up the path,
+     we should define "express.Router({mergeParams: true});" in route file 
+     to merge the param from campground and comment together in order to get the /:id
       
 RESTful Routes:
 name      url                    verb     desc.                                                   Mongoose Method
