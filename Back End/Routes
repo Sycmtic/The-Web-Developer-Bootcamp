@@ -21,3 +21,16 @@ Show     /campgrounds/:id        GET     Show more info about one campground    
 Edit     /campgrounds/:id/edit   GET     Show edit form for one campground                        Campground.findById()
 Update   /campgrounds/:id        PUT     Update a particular campground, then redirect somewhere  Campground.findByIdAndUpdate()
 Destory  /camprgounds/:id        DELETE  Delete a particular campground, then redirect somewhere  Campground.findByIdAndRemove()
+===============================================================================================================================
+
+Middleware
+middleware run before the callback function usually to check the state
+// middleware to check if the user has logged in
+middlewareObj.isLoggedIn = function(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    }
+    // add one-time message to the key "error" in order to display feedback message in page
+    req.flash("error", "You need to be logged in to do that");
+    res.redirect("/login");
+};
