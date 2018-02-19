@@ -25,7 +25,11 @@ make it easier to interact with database
 Schema:
 * var name_Schema = mongoose.Schema(object); to define a pattern
 * mongoose.model("model_name", nameSchema); compile schema to a model
-there are two ways to associate data:1. embeded data 2. object reference
+there are two ways to associate data:
+1. embeded data 
+2. object reference: 
+use model_name.findById(req.params.id).populate("comments").exec(error, callback(err, item_found){}); 
+to get original comments data througth reference
 Deal with database:
 * mongoose.create(object, callback(err, item_created); add and save an new object to database
 * model_name.find({specific}, callback(err, item_found) {}); to find a specific items in database
