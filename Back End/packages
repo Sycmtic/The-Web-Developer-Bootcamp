@@ -110,3 +110,21 @@ app.use(require("express-session")({
     saveUninitialized: false
 }));
 app.use(passport.session()); 
+
+- connect-flash
+The flash is a special area of the session used for storing messages. 
+Messages are written to the flash and cleared after being displayed to the user.
+// store one-time message to the key "error" before redirect in order to display feedback message in other page
+req.flash("error", "You need to be logged in to do that");
+// in the route, use this way to show the message
+res.render("login", {messages: req.flash("error")});
+// in order to apply to all routes we can define in middleware and use it
+app.use(function(req, res, next) {
+    // add user to all routes
+    res.locals.currentUser = req.user;
+    // add feedback message to all routes
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
+    // remember to add next() method
+    next();
+});
