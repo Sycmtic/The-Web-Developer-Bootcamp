@@ -75,7 +75,7 @@ passport.deserializeUser(User.deserializeUser());
 var newUser = new User({username: req.body.username});
 // register a new user with password which store as hashcode
 User.register(newUser, req.body.password, callback(err, user) {});
-// middleware to authenticate the user
+// middleware to authenticate the user (method set up in line 69)
 passport.authenticate("local", {
     successRedirect: "/campgrounds",
     failureRedirect: "/login"
