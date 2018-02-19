@@ -9,10 +9,13 @@ embedded JavaScript templates which allow us write javascript code in HTML file 
 <% %> use when just do the logic
 <%= %> the return value will render to the page and add directly to html 
 <%- %> run the content in it as a code rather than string
-{variable_name_inside_the_template: variable_we_define} pass variable into a template file
+// pass variable into a template file
+{variable_name_inside_the_template: variable_we_define} 
 
 - body-parser
 body-parser groups all the post request information into a single body object.
+// tell express to use body-parser
+app.use(bodyParser.urlencoded({extended: true}));
 
 - request
 simplified HTTP request client to make http calls in js node.(in order to use other API such as yahoo weather api)
@@ -21,22 +24,31 @@ Therefore before we use it, we need to use JSON.parse(body) to convert it to JS 
 
 - mongoose
 make it easier to interact with database
-* mongoose.connect("database_path"); to connect a database
+// used to connect a database
+* mongoose.connect("database_path"); 
 Schema:
-* var name_Schema = mongoose.Schema(object); to define a pattern
-* mongoose.model("model_name", nameSchema); compile schema to a model
+// define a pattern
+* var name_Schema = mongoose.Schema(object);
+// compile schema to a model
+* mongoose.model("model_name", nameSchema); 
 there are two ways to associate data:
 1. embeded data 
 2. object reference: 
+// to get the original comments data througth object reference
 use model_name.findById(req.params.id).populate("comments").exec(error, callback(err, item_found){}); 
-to get original comments data througth reference
 Deal with database:
-* object_inDB.save() save the change of object to database
-* model_name.create(object, callback(err, item_created); add and save an new object to database
-* model_name.find({specific}, callback(err, item_found) {}); to find a specific items in database
-* model_name.findById(req.params.id, callback(err, item_found) {}); to find the item with provided id
-* model_name.findByIdAndUpdate(req.params.id, req.params.newContent, callback(err, item_update){} ); to find and update item
-* model_name.findByIdAndRemove(req.params.id, callback(err){} ); to find and delete item in database
+// save the change of object to database
+* object_inDB.save() 
+// add and save an new object to database
+* model_name.create(object, callback(err, item_created); 
+// to find a specific items in database
+* model_name.find({specific}, callback(err, item_found) {}); 
+// to find the item with provided id
+* model_name.findById(req.params.id, callback(err, item_found) {}); 
+// to find and update item
+* model_name.findByIdAndUpdate(req.params.id, req.params.newContent, callback(err, item_update) {}); 
+// to find and delete item in database
+* model_name.findByIdAndRemove(req.params.id, callback(err) {}); 
 
 - method-override
 HTML form don't support PUT/DELETE request, 
@@ -47,19 +59,27 @@ when it sees "_method", it will treat the get/post method as put/delete method
 used in change items in database(create, update) and middleware, 
 it gets rid of bad thing like alert() in the input object
 
-- passport                    the authentication middleware for Node.js (+300 strategy)
-app.use(passport.initialize()); tell the express to use passport.
+- passport
+the authentication middleware for Node.js (+300 strategy)
+// tell the express to use passport.
+app.use(passport.initialize()); 
+// responsible for reading the session and taking the data from session that's encoded and unencoded it.
 passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser()); responsible for reading the session and taking the data from session that's
-encoded and unencoded it.
-- passport-local              username and password authentication strategy for Passport and Node.js
-- passport-local-mongoose     a mongoose plugin that simplifies building username and password login with Passport
-UserSchema.plugin(passportLocalMongoose); add some methods in passportLocalMongoose package to UserSchema.
+passport.deserializeUser(User.deserializeUser()); 
 
-- express-session             a way to provide state when login
+- passport-local
+username and password authentication strategy for Passport and Node.js
+- passport-local-mongoose
+a mongoose plugin that simplifies building username and password login with Passport
+// add some methods in passportLocalMongoose package to UserSchema.
+UserSchema.plugin(passportLocalMongoose); 
+
+- express-session
+a way to provide state when login
+// tell the express to use session.
 app.use(require("express-session")({
     secret: "This is a secret page",
     resave: false,
     saveUninitialized: false
 }));
-app.use(passport.session()); tell the express to use session.
+app.use(passport.session()); 
