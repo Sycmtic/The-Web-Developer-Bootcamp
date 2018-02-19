@@ -31,11 +31,13 @@ Schema:
 * var name_Schema = mongoose.Schema(object);
 // compile schema to a model
 * mongoose.model("model_name", nameSchema); 
-there are two ways to associate data:
+
+There are two ways to associate data:
 1. embeded data 
 2. object reference: 
 // to get the original comments data througth object reference
 use model_name.findById(req.params.id).populate("comments").exec(error, callback(err, item_found){}); 
+
 Deal with database:
 // save the change of object to database
 * object_inDB.save() 
@@ -67,10 +69,21 @@ app.use(passport.initialize());
 passport.use(new LocalStrategy(User.authenticate()));
 // responsible for reading the session and taking the data from session that's encoded and unencoded it.
 passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser()); 
+passport.deserializeUser(User.deserializeUser());
+
+// create a new user
+var newUser = new User({username: req.body.username});
+// register a new user with password which store as hashcode
+User.register(newUser, req.body.password, callback(err, user) {});
+// middleware to authenticate the user
+passport.authenticate("local", {
+    successRedirect: "/campgrounds",
+    failureRedirect: "/login"
+    })
 
 - passport-local
 username and password authentication strategy for Passport and Node.js
+
 - passport-local-mongoose
 a mongoose plugin that simplifies building username and password login with Passport
 // add some methods in passportLocalMongoose package to UserSchema.
