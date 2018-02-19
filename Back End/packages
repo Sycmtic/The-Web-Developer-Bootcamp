@@ -35,6 +35,18 @@ Schema:
 There are two ways to associate data:
 1. embeded data 
 2. object reference: 
+// create a schema with object reference
+var commentSchema = mongoose.Schema({
+    text: String,
+    createdAt: { type: Date, default: Date.now },
+    author: {
+        id: {
+            type: mongoose.Schema.Types.ObjectId,   // associate comment with user
+            ref: "User"    // module name
+        },
+        username: String
+    }
+});
 // to get the original comments data througth object reference
 use model_name.findById(req.params.id).populate("comments").exec(error, callback(err, item_found){}); 
 
