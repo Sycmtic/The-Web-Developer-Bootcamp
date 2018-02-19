@@ -48,7 +48,15 @@ used in change items in database(create, update) and middleware,
 it gets rid of bad thing like alert() in the input object
 
 - passport                    the authentication middleware for Node.js (+300 strategy)
+app.use(passport.initialize()); tell the express to use passport.
 - passport-local              username and password authentication strategy for Passport and Node.js
 - passport-local-mongoose     a mongoose plugin that simplifies building username and password login with Passport
+UserSchema.plugin(passportLocalMongoose); add some methods in passportLocalMongoose package to UserSchema.
 
 - express-session             a way to provide state when login
+app.use(require("express-session")({
+    secret: "This is a secret page",
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.session()); tell the express to use session.
