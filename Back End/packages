@@ -63,6 +63,8 @@ it gets rid of bad thing like alert() in the input object
 the authentication middleware for Node.js (+300 strategy)
 // tell the express to use passport.
 app.use(passport.initialize()); 
+// create a new strategy using User.authenticate() method which is passing from passportLocalMongoose
+passport.use(new LocalStrategy(User.authenticate()));
 // responsible for reading the session and taking the data from session that's encoded and unencoded it.
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser()); 
