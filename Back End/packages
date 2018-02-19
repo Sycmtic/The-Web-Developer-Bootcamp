@@ -31,7 +31,8 @@ there are two ways to associate data:
 use model_name.findById(req.params.id).populate("comments").exec(error, callback(err, item_found){}); 
 to get original comments data througth reference
 Deal with database:
-* mongoose.create(object, callback(err, item_created); add and save an new object to database
+* object_inDB.save() save the change of object to database
+* model_name.create(object, callback(err, item_created); add and save an new object to database
 * model_name.find({specific}, callback(err, item_found) {}); to find a specific items in database
 * model_name.findById(req.params.id, callback(err, item_found) {}); to find the item with provided id
 * model_name.findByIdAndUpdate(req.params.id, req.params.newContent, callback(err, item_update){} ); to find and update item
