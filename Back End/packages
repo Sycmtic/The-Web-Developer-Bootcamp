@@ -128,3 +128,5 @@ app.use(function(req, res, next) {
     // remember to add next() method
     next();
 });
+when display message in view page, remember to check both "error && error.length > 0", 
+cuz most of the time the message is empty array
