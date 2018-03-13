@@ -87,3 +87,7 @@ open file in cloud 9
 
 28. clear
 clear the terminal
+
+29. history
+get recently history command
+and use !num to run history command
