@@ -95,5 +95,8 @@ clear the terminal
 get recently history command
 and use !num to run history command
 
-30 pwd
+30. pwd
 print current working directory
+
+31. man (name)
+get the tutorial about the particular thing
