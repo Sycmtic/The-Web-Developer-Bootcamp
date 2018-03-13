@@ -1,6 +1,7 @@
-1. ls (-l) (file path)
+1. ls (-l)(-al) (file path)
 to list all contents in current(given) directory
 use -l to list all contents of a directory in long format
+use -al to show hidden file
 
 2. cd folderName/(folder path)
 to get into the given folder
