@@ -5,8 +5,9 @@ use -l to list all contents of a directory in long format
 2. cd folderName/(folder path)
 to get into the given folder
 
-3. cd .. 
+3. cd .. (cd ~)
 go back to last level
+use ~ to come back to home directory
 
 4. touch fileName
 create a new file
