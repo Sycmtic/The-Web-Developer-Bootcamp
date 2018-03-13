@@ -1,5 +1,6 @@
-1. ls (file path)
-to see all the elements in current(given) file
+1. ls (-l) (file path)
+to list all contents in current(given) directory
+use -l to list all contents of a directory in long format
 
 2. cd folderName/(folder path)
 to get into the given folder
