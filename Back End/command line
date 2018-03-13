@@ -91,3 +91,6 @@ clear the terminal
 29. history
 get recently history command
 and use !num to run history command
+
+30 pwd
+print current directory
