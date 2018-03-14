@@ -93,10 +93,14 @@ clear the terminal
 
 29. history
 get recently history command
-and use !num to run history command
+use !num to run history command
+use ↑ ↓ to skip over the history
 
 30. pwd
 print current working directory
 
 31. man (name)
 get the tutorial about the particular thing
+
+32. a*.csv
+find all files beginning with a and end with .csv
