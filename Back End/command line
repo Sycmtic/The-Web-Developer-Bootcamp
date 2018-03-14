@@ -21,97 +21,113 @@ print the contents of the specified file to the screen,
 but pause once the contents have filled the available screen real estate before printing more; 
 when paused: ENTER = move one line down, SPACEBAR = page down, q = quit printing
 
-7. less filename
+7. less fileName
 like more, but you can move forwards and backwards throughout the file using the arrow, page-up, and page-down keys
 
-8. mkdir directoryName
+8. cp file1 file2
+copy a file ("file1" is copied to a new file named "file2")
+
+9. mv file1 newName
+move or rename a file ("file1" is renamed to "newname")
+ex: mv foo.txt myfoo.txt
+    mv myfoo.txt /tmp
+    mv /tmp/myfoo.txt anotherfoo.txt
+
+10. head (-n) fileName
+print the first few(n) lines of a file
+
+11. tail (-n) filename
+print the last few(n) lines of a file
+
+12. mkdir directoryName
 create a new directory
 
-9. rm fileName
+13. rm fileName
 delete the file
 
-10. rm -rf directoryName
+14. rm -rf directoryName
 delete the directory
+
+15. clear
+clear the terminal
+
+16. history
+get recently history command
+use !num to run history command
+use ↑ ↓ to skip over the history
+
+17. pwd
+print current working directory
+
+18. man (name)
+get the tutorial about the particular thing
+
+19. a*.csv
+find all files beginning with a and end with .csv
+
 
 * Node.js allows us to write JavaScript on the server side
 * npm is a package manager which allows you to install third party software(framewords application libraries) by using command line.
 
-11. node (fileName.js)
+1. node (fileName.js)
 to get into the JS mode which can code JS (use control + c to quit)
 if you add file name after the node operator command line can execute this file as JS
 
-12. npm install packageName
+2. npm install packageName
 install npm package like faker and cat-me
 
 * package.json lists the packages that your project depends on,
 and makes your build reproducible, therefore much easier to share with other developers.
 
-13. npm init
+3. npm init
 create a new package.json in current folder
 
-14. npm install express (--save)
+4. npm install express (--save)
 install framework express
 ( save the package to dependency section in package.json file )
 
-15. npm install ejs (--save)
+5. npm install ejs (--save)
 install ejs
 
-16. npm install body-parser (--save)
+6. npm install body-parser (--save)
 install body parser to deal with post request
 
-17. npm install request
+7. npm install request
 install request package to make request in JS file
 
-18. npm install mongoose
+8. npm install mongoose
 install mongoose package to write mongoDB in JS
 
-19. npm install method-override (--save)
+9. npm install method-override (--save)
 install method-override package to override the method to be put or delete
 
-20. npm install express-sanitizer (--save)
+10. npm install express-sanitizer (--save)
 install sanitizer package to get rid of some bad things in body like alert()
 
-21. npm install passport passport-local (--save)
+11. npm install passport passport-local (--save)
 
-22. npm install passport-local-mongoose (--save)
+12. npm install passport-local-mongoose (--save)
 
-23. npm install express-session (--save)
+13. npm install express-session (--save)
 all three above are used for authenticate
 
-24. npm install connect-flash (--save)
+14. npm install connect-flash (--save)
 connect-flash is used to send feedback message to user
 
-25. npm install -g nodemon
+15. npm install -g nodemon
 install nodemon to automatically restart the server for you if files have changed
 
-26. export DATABASEURL=mongodb://localhost/yelp_camp_v12
+16. export DATABASEURL=mongodb://localhost/yelp_camp_v12
 create a environment variable in local in order to change the database automatically
 
-27. heroku config:set KEY=VALUE
+17. heroku config:set KEY=VALUE
 create a environment variable in heroku in order to change the database automatically
 
-28. npm i -S geocoder
+18. npm i -S geocoder
 install geocoder to your project via the terminal in order to use google map api
 
-29. npm i -S moment (shorthand for npm install --save moment)
+19. npm i -S moment (shorthand for npm install --save moment)
 use Moment JS to add time passed since date created
 
-30. c9 fileName
+20. c9 fileName
 open file in cloud 9
-
-31. clear
-clear the terminal
-
-32. history
-get recently history command
-use !num to run history command
-use ↑ ↓ to skip over the history
-
-33. pwd
-print current working directory
-
-34. man (name)
-get the tutorial about the particular thing
-
-35. a*.csv
-find all files beginning with a and end with .csv
