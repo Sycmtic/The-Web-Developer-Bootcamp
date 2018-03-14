@@ -39,30 +39,36 @@ print the first few(n) lines of a file
 11. tail (-n) filename
 print the last few(n) lines of a file
 
-12. mkdir directoryName
+12. wc (-l)(-w)(-c) some_file
+counts the number of lines, words, and characters in the file:
+use -l counts only the number of lines in the file:
+use -w counts only the number of words in the file:
+use -c counts only the number of characters in the file:
+
+13. mkdir directoryName
 create a new directory
 
-13. rm fileName
+14. rm fileName
 delete the file
 
-14. rm -rf directoryName
+15. rm -rf directoryName
 delete the directory
 
-15. clear
+16. clear
 clear the terminal
 
-16. history
+17. history
 get recently history command
 use !num to run history command
 use ↑ ↓ to skip over the history
 
-17. pwd
+18. pwd
 print current working directory
 
-18. man (name)
+19. man (name)
 get the tutorial about the particular thing
 
-19. a*.csv
+20. a*.csv
 find all files beginning with a and end with .csv
 
 
