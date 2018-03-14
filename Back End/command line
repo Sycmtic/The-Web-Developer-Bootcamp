@@ -54,22 +54,45 @@ delete the file
 15. rm -rf directoryName
 delete the directory
 
-16. clear
+16. find searchPath -name fileName
+search "search_path" for items named "some_name"
+
+17. grep (-r) "find_item" fileName/directoryName
+print all the lines/lines of files in "fileName/directoryName" that contain "find_item"
+use -r to search in any of its direct or indirect child directores
+
+18. clear
 clear the terminal
 
-17. history
+19. history
 get recently history command
 use !num to run history command
 use ↑ ↓ to skip over the history
 
-18. pwd
+20. pwd
 print current working directory
 
-19. man (name)
+21. man (name)
 get the tutorial about the particular thing
 
-20. a*.csv
+22. a*.csv
 find all files beginning with a and end with .csv
+
+* Pipes 
+The pipe symbol "|" is used to direct the output of one command to the input of another.
+e.g. ls /etc|sort|tail–n5
+get the ls of /etc directory, output to sort, after sorting output to last command to print last 5 lines
+
+The redirection directives, ">" and ">>" can be used on the output of most commands to direct their output to a file.
+e.g. head -n 10 some_file > new_file
+Redirects the output of the head command (detailed above) to a file "new_file"
+e.g. head -n 10 some_file >> exist_file
+Redirects the output of the head command to the end of "exist_file"
+
+Command substitution uses the output of one command as an input to another command
+and is invoked by enclosing a command as $(command).
+e.g. cat $(head -n1 some_file)
+This will read the first line from "some_file" and use it as the filename argument to the cat tool, which will print the contents.
 
 
 * Node.js allows us to write JavaScript on the server side
