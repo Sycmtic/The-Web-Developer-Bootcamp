@@ -57,8 +57,8 @@ use -l counts only the number of lines in the file:
 use -w counts only the number of words in the file:
 use -c counts only the number of characters in the file:
 
-16. find searchPath -name file_name
-search "search_path" for items named "some_name"
+16. find search_path -name file_name
+search "search_path" for items named "file_name"
 
 17. grep (-r) "find_item" file_name/directory_name
 print all the lines/lines of files in "fileName/directoryName" that contain "find_item"
