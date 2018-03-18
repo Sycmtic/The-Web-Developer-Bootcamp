@@ -12,74 +12,71 @@ to get into the given folder
 go back to last level
 use ~ to come back to home directory
 
-4. touch file_name
+4. pwd
+print current working directory
+
+5. touch file_name
 create a new file
 
-5. mkdir (-p) directory_name/(directory_path)
+6. mkdir (-p) directory_name/(directory_path)
 create a new directory
 use -p to create the directory path
 
-6. rm file_name
+7. rm file_name
 remove or delete a file
 
-7. rm -rf directory_name
+8. rm -rf directory_name
 remove the directory and its contents
 
-8. cat file_name
+9. cat file_name
 print the contents of the specified file to the screen
 
-9. head (-n) file_name
+10. head (-n) file_name
 print the first few(n) lines of a file
 
-10. tail (-n) file_name
+11. tail (-n) file_name
 print the last few(n) lines of a file
 
-11. more file_name
+12. more file_name
 print the contents of the specified file to the screen, 
 but pause once the contents have filled the available screen real estate before printing more; 
 when paused: ENTER = move one line down, SPACEBAR = page down, q = quit printing
 
-12. less file_name
+13. less file_name
 like more, but you can move forwards and backwards throughout the file using the arrow, page-up, and page-down keys
 
-13. cp file1 file2
+14. cp file1 file2
 copy a file ("file1" is copied to a new file named "file2")
 
-14. mv file1 new_name
+15. mv file1 new_name
 move or rename a file ("file1" is renamed to "newname")
 e.g. mv foo.txt myfoo.txt
      mv myfoo.txt /tmp
      mv ~/tmp/myfoo.txt anotherfoo.txt
 
-15. wc (-l)(-w)(-c) some_file
+16. wc (-l)(-w)(-c) some_file
 counts the number of lines, words, and characters in the file:
 use -l counts only the number of lines in the file:
 use -w counts only the number of words in the file:
 use -c counts only the number of characters in the file:
 
-16. find search_path -name file_name
+17. find search_path -name file_name
 search "search_path" for items named "file_name"
 
-17. grep (-r) "find_item" file_name/directory_name
+18. grep (-r) "find_item" file_name/directory_name
 print all the lines/lines of files in "fileName/directoryName" that contain "find_item"
 use -r to search in any of its direct or indirect child directores
 
-18. clear
+19. clear
 clear the terminal
 
-19. history
+20. history
 get recently history command
 use !num to run history command
 use ↑ ↓ to skip over the history
 
-20. pwd
-print current working directory
-
 21. man (name)
 get the tutorial about the particular thing
-
-22. a*.csv
-find all files beginning with a and end with .csv
 
 * Pipes 
 The pipe symbol "|" is used to direct the output of one command to the input of another.
