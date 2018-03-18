@@ -1,7 +1,9 @@
-1. ls (-l)(-al) (file path)
+1. ls (-l)(-al)(-t) (file path)
 to list all contents in current(given) directory
-use -l to list all contents of a directory in long format
-use -al to show hidden file
+use -l to list all contents in long format
+use -al to list all contents including hidden files
+use -t to list the files sorted from most recently created first, oldest last
+use * to represent optional part, e.g. *.jpg
 
 2. cd folderName/(folder path)
 to get into the given folder
