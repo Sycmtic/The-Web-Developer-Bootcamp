@@ -1,65 +1,66 @@
-1. ls (-l)(-al)(-t) (file path)
+1. ls (-l)(-al)(-t) (file_path)
 to list all contents in current(given) directory
 use -l to list all contents in long format
 use -al to list all contents including hidden files
 use -t to list the files sorted from most recently created first, oldest last
 use * to represent optional part, e.g. *.jpg
 
-2. cd folderName/(folder path)
+2. cd folder_name/folder_path
 to get into the given folder
 
 3. cd .. (cd ~)
 go back to last level
 use ~ to come back to home directory
 
-4. touch fileName
+4. touch file_name
 create a new file
 
-5. cat fileName
+5. mkdir (-p) directory_name/(directory_path)
+create a new directory
+use -p to create the directory path
+
+6. rm file_name
+remove or delete a file
+
+7. rm -rf directory_name
+remove the directory and its contents
+
+8. cat file_name
 print the contents of the specified file to the screen
 
-6. more fileName
+9. head (-n) file_name
+print the first few(n) lines of a file
+
+10. tail (-n) file_name
+print the last few(n) lines of a file
+
+11. more file_name
 print the contents of the specified file to the screen, 
 but pause once the contents have filled the available screen real estate before printing more; 
 when paused: ENTER = move one line down, SPACEBAR = page down, q = quit printing
 
-7. less fileName
+12. less file_name
 like more, but you can move forwards and backwards throughout the file using the arrow, page-up, and page-down keys
 
-8. cp file1 file2
+13. cp file1 file2
 copy a file ("file1" is copied to a new file named "file2")
 
-9. mv file1 newName
+14. mv file1 new_name
 move or rename a file ("file1" is renamed to "newname")
-ex: mv foo.txt myfoo.txt
-    mv myfoo.txt /tmp
-    mv /tmp/myfoo.txt anotherfoo.txt
+e.g. mv foo.txt myfoo.txt
+     mv myfoo.txt /tmp
+     mv ~/tmp/myfoo.txt anotherfoo.txt
 
-10. head (-n) fileName
-print the first few(n) lines of a file
-
-11. tail (-n) filename
-print the last few(n) lines of a file
-
-12. wc (-l)(-w)(-c) some_file
+15. wc (-l)(-w)(-c) some_file
 counts the number of lines, words, and characters in the file:
 use -l counts only the number of lines in the file:
 use -w counts only the number of words in the file:
 use -c counts only the number of characters in the file:
 
-13. mkdir directoryName
-create a new directory
-
-14. rm fileName
-delete the file
-
-15. rm -rf directoryName
-delete the directory
-
-16. find searchPath -name fileName
+16. find searchPath -name file_name
 search "search_path" for items named "some_name"
 
-17. grep (-r) "find_item" fileName/directoryName
+17. grep (-r) "find_item" file_name/directory_name
 print all the lines/lines of files in "fileName/directoryName" that contain "find_item"
 use -r to search in any of its direct or indirect child directores
 
@@ -100,11 +101,11 @@ This will read the first line from "some_file" and use it as the filename argume
 * Node.js allows us to write JavaScript on the server side
 * npm is a package manager which allows you to install third party software(framewords application libraries) by using command line.
 
-1. node (fileName.js)
+1. node (file_name.js)
 to get into the JS mode which can code JS (use control + c to quit)
 if you add file name after the node operator command line can execute this file as JS
 
-2. npm install packageName
+2. npm install package_name
 install npm package like faker and cat-me
 
 * package.json lists the packages that your project depends on,
