@@ -30,6 +30,7 @@ tag.classList.toggle("another-class");
 /* Manipulating text and content */
 // retrieve the textContent and alter it
 tag.textContent = "blah blah blah";
+tag.innerContent = String;
 // similar to textContent, except it returns a string of all the HTML contained in a given element
 tag.innerHTML = "<h1>Hello!</h1>";
 
