@@ -11,7 +11,7 @@ to get into the given directory
 
 3. cd .. (cd ~)
 go back to parent directory
-use ~ to come back to home directory
+'..' means 'parent directory', that '.' means 'current directory' and '~' means 'home directory'
 
 4. pwd
 print current working directory
