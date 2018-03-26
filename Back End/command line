@@ -6,84 +6,88 @@ use -t to list the files sorted from most recently created first, oldest last
 use -i to show the inode number
 use * to represent optional part, e.g. *.jpg
 
-2. cd folder_name/folder_path
+2. ln (-s) existing_name.txt new_name.txt
+add a link for a file in a directory
+use -s to create a symbolic link
+
+3. cd folder_name/folder_path
 to get into the given directory
 
-3. cd .. (cd ~)
+4. cd .. (cd ~)
 go back to parent directory
 '..' means 'parent directory', that '.' means 'current directory' and '~' means 'home directory'
 
-4. pwd
+5. pwd
 print current working directory
 
-5. touch file_name
+6. touch file_name
 create a new file
 
-6. mkdir (-p) directory_name/(directory_path)
+7. mkdir (-p) directory_name/(directory_path)
 create a new directory
 use -p to create the directory path
 
-7. rm file_name
+8. rm file_name
 remove or delete a file
 
-8. rm -rf directory_name
+9. rm -rf directory_name
 remove the directory and its contents
 
-9. cat file_name
+10. cat file_name
 print the contents of the specified file to the screen
 
-10. head (-n) file_name
+11. head (-n) file_name
 print the first few(n) lines of a file
 
-11. tail (-n) file_name
+12. tail (-n) file_name
 print the last few(n) lines of a file
 
-12. more file_name
+13. more file_name
 print the contents of the specified file to the screen, 
 but pause once the contents have filled the available screen real estate before printing more; 
 when paused: ENTER = move one line down, SPACEBAR = page down, q = quit printing
 
-13. less file_name
+14. less file_name
 like more, but you can move forwards and backwards throughout the file using the arrow, page-up, and page-down keys
 
-14. cp file1 file2
+15. cp file1 file2
 copy a file ("file1" is copied to a new file named "file2")
 
-15. mv file1 new_name
+16. mv file1 new_name
 move or rename a file ("file1" is renamed to "newname")
 e.g. mv foo.txt myfoo.txt
      mv myfoo.txt /tmp
      mv ~/tmp/myfoo.txt anotherfoo.txt
 
-16. wc (-l)(-w)(-c) some_file
+17. wc (-l)(-w)(-c) some_file
 counts the number of lines, words, and characters in the file:
 use -l counts only the number of lines in the file:
 use -w counts only the number of words in the file:
 use -c counts only the number of characters in the file:
 
-17. find search_path -name file_name
+18. find search_path -name file_name
 search "search_path" for items named "file_name"
 e.g. find . -name *txt
 finds all the files whose type is .txt in the current directory or any subdirectory
 e.g. find / -name "*svn*"
 find all files whose names contain the string "svn" anywhere on the system
 
-18. grep (-r) "find_item" file_name/directory_name
+19. grep (-r) "find_item" file_name/directory_name
 print all the lines/lines of files in "file_name/directory_name" that contain "find_item"
 use -r to search in any of its direct or indirect child directores
 
-19. clear
+20. clear
 clear the terminal
 
-20. history
+21. history
 get recently history command
 use !num to run history command
 use ↑ ↓ to skip over the history
 
-21. man (name)
+22. man (name)
 get the tutorial about the particular thing
 
-22. apropos string_name
+23. apropos string_name
 shows a list of all the man pages whose descriptions contain the word "string_name"
 
 * Pipes 
