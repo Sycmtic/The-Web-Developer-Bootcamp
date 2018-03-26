@@ -1,15 +1,16 @@
-1. ls (-l)(-al)(-t) (file_path)
+1. ls (-l)(-al)(-t)(-i) (file_path)
 to list all contents in current(given) directory
 use -l to list all contents in long format
 use -al to list all contents including hidden files
 use -t to list the files sorted from most recently created first, oldest last
+use -i to show the inode number
 use * to represent optional part, e.g. *.jpg
 
 2. cd folder_name/folder_path
-to get into the given folder
+to get into the given directory
 
 3. cd .. (cd ~)
-go back to last level
+go back to parent directory
 use ~ to come back to home directory
 
 4. pwd
